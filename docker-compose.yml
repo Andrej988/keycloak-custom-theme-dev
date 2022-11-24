@@ -11,7 +11,6 @@ services:
       - "./postgres_data:/bitnami/postgresql"
 
   keycloak:
-    #build: .
     image: bitnami/keycloak:20.0.1
     container_name: keycloak-themes-test
     environment:
@@ -24,4 +23,3 @@ services:
       - ./themes/:/opt/bitnami/keycloak/themes/
     depends_on:
       - postgresql
-#http://localhost:8888/realms/test/protocol/openid-connect/auth?client_id=test&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Flive&state=d75cbf4b-b92d-4eb4-85bd-60c9e8145de7&response_mode=fragment&response_type=code&scope=openid&nonce=a0195646-64e4-4584-8c68-433d8277780f&code_challenge=TgQ5GpeGHpNhvckGhAZEe0DbDApuXXVEujwjSGMDwsQ&code_challenge_method=S256
