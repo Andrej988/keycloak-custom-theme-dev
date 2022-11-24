@@ -23,15 +23,15 @@ This procedure should be performed first time you build keycloak identity server
 1. Create new realm
 2. Make sure that newly created realm is selected. All subsequent changes should be done in newly created realm.
 3. Create a new client with default settings. For easier testing set valid redirect URLs and web origins to *
-<img width="300px" src="https://raw.githubusercontent.com/Andrej988/keycloak-custom-theme-dev/main/img-keycloak-client-setup.JPG?token=GHSAT0AAAAAAB2MJFMNWS5GC47RMWXPP26UY3755PA">
+<img width="300px" src="https://raw.githubusercontent.com/Andrej988/keycloak-custom-theme-dev/main/img-keycloak-client-setup.JPG">
 
 4. Create test user. Don't forget to set a password.
 5. Open realm settings and choose Themes tab. Change login theme to custom_theme_example.
-<img width="300px" src="https://raw.githubusercontent.com/Andrej988/keycloak-custom-theme-dev/main/img-keycloak-realm-theme-setting.JPG?token=GHSAT0AAAAAAB2MJFMMCQG4YIBZD2IKFWAEY3755ZQ">
+<img width="300px" src="https://raw.githubusercontent.com/Andrej988/keycloak-custom-theme-dev/main/img-keycloak-realm-theme-setting.JPG">
 
 6. Now login screen for newly created realm will use custom theme.
 
-<img width="300px" src="https://raw.githubusercontent.com/Andrej988/keycloak-custom-theme-dev/main/img-login-screen.JPG?token=GHSAT0AAAAAAB2MJFMNA2WEY7A2ARDCGFTIY375HOQ">
+<img width="300px" src="https://raw.githubusercontent.com/Andrej988/keycloak-custom-theme-dev/main/img-login-screen.JPG">
 
 ## Notes for development
 - You have to follow a strict structure in ./themes/ folder. 
