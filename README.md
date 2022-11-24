@@ -49,5 +49,6 @@ This procedure should be performed first time you build keycloak identity server
 - Keycloak Server Development / Themes Documentation
   - https://www.keycloak.org/docs/latest/server_development/#_themes
   - https://github.com/keycloak/keycloak-documentation/blob/main/server_development/topics/themes.adoc
+- You can also use keycloakify for theme customization: https://docs.keycloakify.dev/
 
 
