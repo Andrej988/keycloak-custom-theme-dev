@@ -1,13 +1,16 @@
 # Custom Keycloak Theme Development (Starter Pack)
-Keycloak 20.x.x
+Starter setup for development of custom keycloak themes (e.g. login theme) or customization of existing themes. This project is based on Keycloak 20.x.x.
 
 ## Requirements:
 - Docker
 
-## Build Development Environment:
-- Provided docker-compose.yml file can be used to build development environment for custom keycloak themes. Configuration will create postgres database container with persistent data volume to not lose keycloak configuration in case container is recreated. Additionally it will create keycloak identity server container which is configured for development purposes (basic auth, no authentication for db) and runs in development mode (default mode). Folder ./themes/ is mounted in Keycloak identity server to immediately apply all changes in ./themes/ folder to keycloak server. 
+## Description:
+- Provided docker-compose.yml file can be used to build development environment for custom keycloak themes. Configuration will create postgres database container with persistent data volume to not lose keycloak configuration in case container is recreated. Additionally it will create keycloak identity server container which is configured for development purposes (basic auth, no authentication for db) and runs in development mode (default mode). 
+- Folder ./themes/ is mounted in Keycloak identity server to immediately apply all changes in ./themes/ folder to keycloak server. 
 - Remember when deploying themes to keycloak server which runs in production mode you will have to restart keycloak server for changes to take effect. 
 - Example of custom theme named "custom_theme_example" is provided and will be automatically loaded into keycloak as described above.
+
+## Build Development environment
 - To build keycloak identity server from docker-compose.yml file position yourself in project directory and run: docker compose up -d
 - After a short time keycloak administration console should be available via http://localhost:8888
 
@@ -19,7 +22,6 @@ This procedure should be performed first time you build keycloak identity server
 4. Create test user. Don't forget to set a password.
 5. Open realm settings and choose Themes tab. Change login theme to custom_theme_example.
 6. Now login screen for newly created realm will use custom theme.
-
 
 ## Notes
 - Keycloak Server Development / Themes Documentation
